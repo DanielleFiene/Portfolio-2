@@ -22,9 +22,9 @@
          <!--Navigation bar section-->
         <nav class="navbar">
             <ul role="presentation">
-                <li><a href="index.html"><span class="active">home</span></a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="portfolio.html">portfolio & prices</a></li>
-                <li><a href="contact.html">contact</a></li>
+                <li><a href="#"><span class="active">contact</span></a></li>
             </ul>
         </nav>
          <!-- Header/hero section-->
@@ -33,7 +33,31 @@
         <!--Main section-->
         <main id="main">
             <div class="bg">
-                <div class="top-center"><h1>Your Connection, Our Webpage</h1></div>
+                <div class="top-center"><h2>Get in touch</h2></div>
+                <form action="https://api.web3forms.com/submit" method="POST" id="myForm">
+                    <form action="your-server-script.php" method="POST">
+                        <input type="hidden" name="access_key" value="fa4a4a01-029f-45e0-82f3-78c764b97130">
+                        
+                        <label for="firstname" class="label"><strong>Your first name</strong></label>
+                        <input id="firstname" name="firstname" type="text" class="input" required autocomplete="off"><br>
+                        
+                        <label for="lastname" class="label"><strong>Your last name</strong></label>
+                        <input id="lastname" name="lastname" type="text" class="input" required autocomplete="off"><br>
+                        
+                        <label for="email" class="label"><strong>Your e-mail</strong></label>
+                        <input id="email" name="email" type="email" class="input" size="30" required autocomplete="off"><br>
+                        
+                        <label for="message" class="label"><strong>Your message</strong></label>
+                        <textarea id="message" name="message" class="input"></textarea><br>
+                        
+                        <!-- Honeypot Spam Protection -->
+                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                        
+                        <br><br>
+                        <button type="submit" class="label" name="submit" id="submit" value="Send your message!">Send your message!</button>
+                    </form>
+                    
+                </form>
             </div>
         </main>
         <!--Footer section-->
@@ -66,7 +90,23 @@
             <p>&COPY;Danielle Fiene</p>
         </div>
         <!--Room for JavaScript file-->
-        <script src="index.js"></script>
+        <script>
+            // Select the form and button elements
+            const form = document.getElementById('myForm');
+            const button = document.getElementById('submit');
+            
+            // Add event listener to the button
+            button.addEventListener('click', function() {
+                // Check if all required fields are filled out
+                if (form.checkValidity()) {
+                    // Change the innerHTML of the button
+                    button.innerHTML = 'Your message has been sent!';
+                } else {
+                    // If not all fields are filled out, display an error or handle accordingly
+                    alert('Please fill out all required fields.');
+                }
+            });
+            </script>
     </body>
 
 </html>

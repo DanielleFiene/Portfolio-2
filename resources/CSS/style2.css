@@ -89,8 +89,7 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
 }
 
 /* text over image section */
@@ -225,31 +224,7 @@ button:active {
 /* Hoverable links CSS trick */
 
 /* Media queries */
-@media only screen and (min-width: 320px) and (max-width: 400px) {
-    .navbar {
-        font-size: 14px;
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-    }
-    .navbar ul {
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-}
-    .navbar ul li {
-        padding: 0;
-    }
-
-    .bg {
-    width: 100%;
-    height: 550px;
-    }
-
-    h1 {
-        font-size: 10px;
-    }
-}
+@media only screen and (min-width: 320px) and (max-width: 400px) {}
 
 @media only screen and (min-width: 400px) and (max-width: 600px) {}
 
