@@ -12,8 +12,7 @@ html {
 }
 
 /* body */
-body {
-    background-color: #DFDFDE;
+body {    
     color: #322831;
     line-height: 1.5em;
     letter-spacing: 0.1em;
@@ -24,6 +23,7 @@ body {
 .navbar {
     padding: 35px;
     font-size: 20px;
+    background-color: #DFDFDE;
 }
 
 .navbar ul {
@@ -51,7 +51,7 @@ a:hover {
 
 /* header/banner section */
 
-/*index-images*/
+/*index-images
 .row {
     display: flex;
     justify-content: space-around;
@@ -72,6 +72,14 @@ a:hover {
 .column2 img {
     object-fit: contain;
     border-radius: 5px;
+} */
+
+.bg {
+    background-image: url("../images/viktor-forgacs-vROKsk9VBBA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
 
 
