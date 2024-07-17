@@ -49,18 +49,16 @@ h5 {
 
 a {
     text-decoration: none;
-    color: #E0CFB0;
+    color: #af8944;
 }
 
 a:hover {
-    color: #77B1AD;
+    color: #E0CFB0;
 }
 
 .active {
     color: #E0CFB0;
-    text-decoration: underline;
 }
-
 
 /*index-images
 .row {
@@ -114,7 +112,7 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #DFDFDE;
+    color: #E0CFB0;
     padding: 2%;
     width: 25%;
     margin: 2% auto;
@@ -126,33 +124,35 @@ input {
     height: 40px;
     width: 60%;
     border-radius: 10px;
-    background-color: #E0CFB0;
+    background-color: #ede4d3;
     outline: 0;
 }
 
 input:focus {
-    border: 5px solid #77B1AD;
+    border: 3px solid #af8944;
 }
 
 textarea {
     height: 200px;
     width: 60%;
     border-radius: 10px;
-    background-color: #E0CFB0;
+    background-color: #ede4d3;
     outline: 0;
 }
 
 textarea:focus {
-    border: 5px solid #77B1AD;
+    border: 3px solid #af8944;
 }
 
 button {
+    color: #1d160b;
     border-radius: 20px;
     padding: 15px;
-    background-color: #E0CFB0;
+    background-color: #af8944;
     transition: box-shadow 0.3s ease;
     transition: transform 0.2s;
     box-shadow:  0 8px 16px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
 }
 
 button:hover {
@@ -179,7 +179,6 @@ button:active {
     margin-top: 2%;
     margin-left: 27%;
     padding-left: 4.5%;
-    background: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
 }
 
@@ -197,17 +196,24 @@ button:active {
 
 /* footer */
 .footer-main {
-    background: rgba(0, 0, 0, 0.4);
     display: flex;
-     align-items: center;
-     color: #E0CFB0;
-     text-align: center;
-     padding: 15px;
-     font-size: 1em;
+    align-items: center;
+    background-color: #E0CFB0;
+    color: #46371b;
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
  }
+
+footer a {
+    color: #46371b;
+}
+
+footer a:hover {
+    color: #927239; 
+}
  
- 
- .footer-address, .footer-contact, .footer-social, .footer-logo, .copy {
+ .footer-address, .footer-contact, .footer-social, .footer-copy {
      display: flex;
     justify-content: space-around;
      flex: 1;
