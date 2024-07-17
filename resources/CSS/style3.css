@@ -229,6 +229,9 @@ footer a:hover {
     flex: 1;
  }
 
+ .footer-social i {
+    line-height: 1.2em;
+}
 
 
 
