@@ -26,7 +26,7 @@
          <!--Navigation bar section-->
         <nav class="navbar" id="myNavbar">
             <ul role="presentation">
-                <li><a href="index.html"><span class="active">home</span></a></li>
+                <li><a href="index.html"><span class="active-nav">home</span></a></li>
                 <li><a href="portfolio.html">portfolio & prices</a></li>
                 <li><a href="contact.html">contact</a></li>
             </ul>
@@ -39,14 +39,53 @@
             <div>
                 <div class="top-center"><h1>Your Connection, Our Webpage</h1></div>
             </div>
-            <P><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></P>
-            <P><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></P>
+            <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="./resources/images/img-cozy-tea.png" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="./resources/images/pet landing page.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="./resources/images/img-fishing.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="./resources/images/Screenshot 2024-07-14 171506.png" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
         </main>
         <!--Footer section-->
         <footer id="footer">
           </footer>
         <!--Room for JavaScript file-->
         <script src="./resources/JS/toggleNav.js" defer></script>
+        <script src="./resources/JS/slide.js" defer></script>
     </body>
 
 </html>
