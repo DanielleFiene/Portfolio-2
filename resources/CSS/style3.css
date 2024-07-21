@@ -20,8 +20,10 @@ body {
     }
 
 .bg {
-    background-image: linear-gradient(180deg, #0D0A0B, #009FC2 , #0D0A0B);
-    background-size: 100vh;
+    /* background-image: linear-gradient(180deg, #0D0A0B, #009FC2 , #0D0A0B); */
+    background-image: url(../images/visax-x4sDfHL9Ock-unsplash-big.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h5 {
@@ -303,6 +305,16 @@ footer a:hover {
 /* Media queries */
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media (max-width: 768px) {
+
+    body {
+        background-image: url(../images/visax-x4sDfHL9Ock-unsplash\ \(2\)small.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+    }
+
     .navbar ul {
         font-size: 14px;
         display: none; /* Hide the navbar items on smaller screens by default */
